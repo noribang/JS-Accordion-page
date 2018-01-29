@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
-	<head>
-		<meta charset="utf-8">
-		<title>Muso Jikiden Eishin ryu</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<script type="text/javascript" src="script-strict.js"></script>
-
-		<!-- Styles -->
-		<style type="text/css">
-
-		</style>
-	</head>
-
-	<body>
-
-
-		<!-- Scripts -->
-		<script>
-			// Add your JavaScript here...
-		</script>
-	</body>
-</html>
-
-
-<!DOCTYPE html>
-<html>
 <head>
 	<title>MJE-Animated-Accordion-pages</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	
 	<style type="text/css">
+		.accordion {
+			font-family: Arial;
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+		}
+		.active, .accordion:hover {
+			background-color: #ccc;
+		}
+		h2:hover {
+			color: red;
+		}
+		.panel {
+			padding: 0px 18px;
+			display: none;
+			background-color: white;
+			overflow: hidden;
+		}
 		
 	</style>
 </head>
@@ -41,7 +40,19 @@
 
 	<button class="accordion">Section 1</button>
 	<div class="panel">
-		<p>Section 1</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</div>
+
+	<button class="accordion">Section 2</button>
+	<div class="panel">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+
+	<button class="accordion">Section 3</button>
+	<div class="panel">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+
+	<script type="text/javascript" src="script-strict.js"></script>
 </body>
 </html>
