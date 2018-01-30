@@ -23,14 +23,35 @@
 		.active, .accordion:hover {
 			background-color: #ccc;
 		}
+		/* 2. Refactored-Animated styling for button .accordion */
+		.accordion:after {
+			content: "\02795"; /* Unicode 'plus' sign. */
+			font-size: 13px;
+			color: #777;
+			float: right;
+			margin-left: 5px;
+		}
+		/* 2. Refactored-Animated styling for button .accordion */
+		.active:after {
+			content: "\02796"; /* Unicode 'minus' sign.*/
+		}
 		h2:hover {
 			color: red;
 		}
-		.panel {
+		/* 1. Non-Animated styling for div .panel */
+		/*.panel {
 			padding: 0px 18px;
 			display: none;
 			background-color: white;
 			overflow: hidden;
+		}*/
+		/* 2. Refactored-Animated styling for div .panel */
+		.panel {
+			padding: 0px 18px;
+			background-color: #fff;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.6s ease-out;
 		}
 		
 	</style>
